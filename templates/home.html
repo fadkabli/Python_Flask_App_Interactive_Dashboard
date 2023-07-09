@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .sidebar {
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .sidebar h4 {
+            padding: 20px;
+        }
+        .breadcrumbs {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <h4>Dashboard</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <nav aria-label="breadcrumb" class="breadcrumbs">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    </ol>
+                </nav>
+                <h1>Home Page</h1>
+                <div id="visualization">
+                    {{ visualization|safe }}
+                </div>
+                <div id="explanation">
+                    <h2>Explanation</h2>
+                    <p>Die Trendanalyse ist eine wertvolle Technik zur Analyse von Daten im Zeitverlauf und zur Identifizierung von Mustern.
+                        Veränderungen und Tendenzen. Im Zusammenhang mit der Rangfolge des Welthunger-Index (WHI) kann eine Trendanalyse nützliche Erkenntnisse über den Fortschritt liefern
+                         oder Rückschritte bei der Bekämpfung des Hungers in verschiedenen Ländern..</p>
+
+                         <p>Die Trendanalyse der WHI-Ränge im Zeitverlauf liefert wertvolle Einblicke in den Fortschritt,
+                            Herausforderungen und Unterschiede bei der Bekämpfung des Hungers in den verschiedenen Ländern.
+                             Es informiert über die Politikgestaltung, die Ressourcenzuweisung, die Programmevaluierung usw
+                             Interessenvertretungsbemühungen zur Verringerung des Hungers und zur Verbesserung der Ernährungssicherheit.</p>
+
+
+                            <p> Andererseits kann eine Trendanalyse Länder hervorheben
+                                wo der Hunger weiterhin eine große Herausforderung darstellt oder der Fortschritt stagniert.
+                                Länder mit konstant hohen oder sich verschlechternden WHI-Werten erfordern möglicherweise weitere Aufmerksamkeit
+                                und gezielte Interventionen zur Bekämpfung der Grundursachen des Hungers. Das Erkennen von Problembereichen hilft
+                                Richten Sie die Politik und die Ressourcenzuweisung auf die Bereiche aus, die sie am meisten benötigen.</p>
+
+
+
+                         
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
